@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Página de inicio con Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      .navbar{
+        height: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark block-top bg-primary flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><h1>CRUD - Laboratorio 6</h1></a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="offcanvas" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Alumnos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.php">
+                  Cursos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="matriculas.php">
+                  Matrículas
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">¿Qué tenemos que hacer?</h1>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Alumnos</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Lista de alumnos
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p>Hacer un CRUD funcional usando PHP para operar la tabla "alumno" que contiene las columnas "alumno_id", "nombres", "ape_paterno" y "ape_materno".</p>
+                </div>
+                <div class="col">
+                  <img src="img/alumnos.png" alt="" class="img-fluid mx-auto">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button type="button" class="btn btn-warning">Ver Alumnos</button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Cursos</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Lista de Cursos
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <img src="img/cursos.jpg" alt="" class="img-fluid mx-auto">
+                </div>
+                <div class="col">
+                  <p>Para organizar información sobre cursos, se pudo crear una tabla que tenga tres columnas principales: "curso_id", "nombre_curso" y "creditos".</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="cursos.php" class="btn btn-warning">Ver Cursos</a>
+            </div>            
+          </div>
+
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Matrículas</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Lista de matriculas
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p>Se realizó un CRUD para las matriculas, la cual contiene los campos de "matricula_id","curso_id" y "alumno_id"</p>
+                </div>
+                <div class="col">
+                  <img src="img/matriculas.jpg" alt="" class="img-fluid mx-auto">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="matriculas.php" class="btn btn-warning">Ver Matriculas</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
